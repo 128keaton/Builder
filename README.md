@@ -2,6 +2,9 @@
 	<img width="350px" src="https://github.com/128keaton/Builder/blob/master/builder-logo.png?raw=true">
 </p>
 
+An all-in-one NetBoot creation tool that supports package, application, and launch item support. Works inconjunction with AutoDMG.
+
+
 ## Features
 * Downloads and installs Xcode Command Line tools (python3 is required for outset)
 * Downloads and installs `outset`, `set-desktop-catalina.sh`, `dockutil`, `pycreateuserpkg`
@@ -136,6 +139,10 @@ Make sure your repository is the *same name* as the final `.app` name. Sorry!
 ## Notes
 * You can use tab completion on the prompt for a base system.
 
+## Known Issues
+
+**10.15.x**
+* Applescript features do not function
  
 ## Credits
 * [MacMule](https://macmule.com/) - Creator of AutoCasperNBI, from much was borrowed
