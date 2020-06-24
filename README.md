@@ -1,5 +1,6 @@
-<img width="350px" src="https://github.com/128keaton/Builder/blob/master/builder-logo.png?raw=true">
-
+<p align="center">
+	<img width="350px" src="https://github.com/128keaton/Builder/blob/master/builder-logo.png?raw=true">
+</p>
 
 ## Features
 * Downloads and installs Xcode Command Line tools (python3 is required for outset)
