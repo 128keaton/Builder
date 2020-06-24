@@ -38,9 +38,9 @@ Click 'Build'
 
 Once you have your clean image from AutoDMG, make sure you have it ready.
 
-Run the `create-utilities.sh` script like so:
+Run the `builder.sh` script like so:
 ```bash
-$ ./create-utilities
+$ ./builder.sh
 ```
 
 The script will prompt you automatically for a super user password, no need to run as root.
