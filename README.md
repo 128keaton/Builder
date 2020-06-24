@@ -15,7 +15,8 @@ An all-in-one NetBoot creation tool that supports package, application, and laun
 * Reuse of a previously created image, useful for quick updates.
 
 
-## Prerequisites
+## Usage
+### Prerequisites
 
 Please download and install these dependencies before continuing.
 
@@ -23,7 +24,7 @@ Please download and install these dependencies before continuing.
 * [AutoDMG](https://github.com/MagerValp/AutoDMG/releases)
 * wget (use `brew install wget`)
 
-## Building a base macOS image
+### 1. Building a base macOS image
 
 Make sure you have downloaded a copy of 'Install macOS Catalina' and it is in your Applications folder before continuing.
 
@@ -37,7 +38,7 @@ When done, there should be a mounted volume named 'Catalina' with the installer 
 Open AutoDMG and drag the application from the Finder window to AutoDMG
 Click 'Build'
 
-## Building a NetBoot set
+### 2. Building a NetBoot set
 
 **Please rename the `builder.example.conf` to `builder.conf` and configure appropriately**
 
