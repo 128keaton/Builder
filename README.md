@@ -9,8 +9,7 @@
 * Sets the network time-server and timezone.
 * Compresses the NetBoot set when complete.
 * Reuse of a previously created image, useful for quick updates.
-* Can enable/disable SIP (_magic sauce_)
-* Can update Mac Pro firmware
+
 
 ## Prerequisites
 
@@ -24,9 +23,9 @@ Please download and install these dependencies before continuing.
 
 Make sure you have downloaded a copy of 'Install macOS Catalina' and it is in your Applications folder before continuing.
 
-First, run the `wrap-catalina.sh` located in `Other/`
+First, run the `wrap-catalina.sh` located in `Other/Scripts/`
 ```bash
-$ cd Other/ && wrap-catalina.sh
+$ cd Other/Scripts/ && wrap-catalina.sh
 ```
 
 When done, there should be a mounted volume named 'Catalina' with the installer app inside the root folder. 
@@ -35,6 +34,9 @@ Open AutoDMG and drag the application from the Finder window to AutoDMG
 Click 'Build'
 
 ## Building a NetBoot set
+
+**Please rename the `builder.example.conf` to `builder.conf` and configure appropriately**
+
 
 Once you have your clean image from AutoDMG, make sure you have it ready.
 
@@ -51,7 +53,7 @@ The script will prompt you automatically for a super user password, no need to r
 Set this to `true` if you want to skip installing packages on the NetBoot volume. 
 This can greatly speed up building if you are troubleshooting.
 ```bash
-$ ./create-utilities.sh --skip-packages=true 
+$ ./builder.sh --skip-packages=true 
 ```
 
 
@@ -59,7 +61,7 @@ $ ./create-utilities.sh --skip-packages=true
 
 Set this to the path of your base system disk image so you aren't prompted to input the disk image.
 ```bash
-$ ./create-utilities.sh --base-disk-image=/Volumes/Scratch/osx-10.15.5-19F2200.apfs.dmg 
+$ ./builder.sh --base-disk-image=/Volumes/Scratch/osx-10.15.5-19F2200.apfs.dmg 
 ```
 
 ## Adding Things
@@ -67,15 +69,7 @@ $ ./create-utilities.sh --base-disk-image=/Volumes/Scratch/osx-10.15.5-19F2200.a
 Simply put your `.pkg` file in `Packages/`. The package should be installed automatically when bundling.
 
 ### Downloaded Packages:
-You must append the package URL to the script itself, currently. Maybe in the future, I'll add the ability to specify a config file.
-```bash
-## PACKAGES
-PACKAGES_TO_DOWNLOAD=(
-  'https://github.com/128keaton/outset/releases/download/3.0.1/outset-3.0.1.pkg' # outset
-  'https://www.python.org/ftp/python/3.8.3/python-3.8.3-macosx10.9.pkg' # Python3
-  # ADD YOUR PACKAGE HERE
-)
-```
+Append your package URL to the `packages.plist` file in `Configuration/` and it will automatically be downloaded and installed.
 
 ### Applications:
 Put your `.app` in `Applications/`, and it will automatically be installed.
