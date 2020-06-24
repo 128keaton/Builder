@@ -9,8 +9,7 @@
 * Sets the network time-server and timezone.
 * Compresses the NetBoot set when complete.
 * Reuse of a previously created image, useful for quick updates.
-* Can enable/disable SIP (_magic sauce_)
-* Can update Mac Pro firmware
+
 
 ## Prerequisites
 
