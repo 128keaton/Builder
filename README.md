@@ -1,5 +1,6 @@
-# Builder
-*Effectively replaces AutoNBI/AutoCasperNBI*
+<img src="https://github.com/128keaton/Builder/blob/master/builder-logo.png?raw=true">
+
+
 
 ## Features
 * Downloads and installs Xcode Command Line tools (python3 is required for outset)
