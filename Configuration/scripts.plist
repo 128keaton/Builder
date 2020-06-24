@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>disable-icloud-prompts.sh</key>
+	<string>https://raw.githubusercontent.com/128keaton/macOS-NetBoot-Environment-Scripts/master/disable-icloud-prompts.sh</string>
+	<key>dockutil</key>
+	<string>https://raw.githubusercontent.com/kcrawford/dockutil/master/scripts/dockutil</string>
+	<key>modify-tcc-db.sh</key>
+	<string>https://raw.githubusercontent.com/128keaton/macOS-NetBoot-Environment-Scripts/master/modify-tcc-db.sh</string>
+	<key>set-desktop-catalina.sh</key>
+	<string>https://raw.githubusercontent.com/tech-otaku/macos-desktop/master/set-desktop-catalina.sh</string>
+	<key>set-user-dock.sh</key>
+	<string>https://raw.githubusercontent.com/128keaton/macOS-NetBoot-Environment-Scripts/master/set-user-dock.sh</string>
+</dict>
+</plist>

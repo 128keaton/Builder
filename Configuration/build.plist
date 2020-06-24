@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FurMark.app</key>
+	<string>https://github.com/128keaton/FurMark</string>
+	<key>SIP-Buddy.app</key>
+	<string>https://github.com/128keaton/SIP-Buddy</string>
+	<key>macOS Utilities.app</key>
+	<string>https://github.com/128keaton/macOS-Utilities</string>
+</dict>
+</plist>
