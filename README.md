@@ -23,9 +23,9 @@ Please download and install these dependencies before continuing.
 
 Make sure you have downloaded a copy of 'Install macOS Catalina' and it is in your Applications folder before continuing.
 
-First, run the `wrap-catalina.sh` located in `Other/`
+First, run the `wrap-catalina.sh` located in `Other/Scripts/`
 ```bash
-$ cd Other/ && wrap-catalina.sh
+$ cd Other/Scripts/ && wrap-catalina.sh
 ```
 
 When done, there should be a mounted volume named 'Catalina' with the installer app inside the root folder. 
