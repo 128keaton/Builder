@@ -1,5 +1,4 @@
-<img src="https://github.com/128keaton/Builder/blob/master/builder-logo.png?raw=true">
-
+<img width="350px" src="https://github.com/128keaton/Builder/blob/master/builder-logo.png?raw=true">
 
 
 ## Features
